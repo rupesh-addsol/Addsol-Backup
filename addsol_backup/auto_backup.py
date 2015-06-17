@@ -52,7 +52,7 @@ class addsol_res_users(osv.osv):
         user = self.browse(cr, SUPERUSER_ID, uid, context)
         host = '127.0.0.1'
         port = '8021'
-        foldername = '/'
+        foldername = ''
         ftp_url = (user.company_id.document_ftp_url).replace('ftp://','')
         ftp_user = user.company_id.document_ftp_user
         ftp_passwd = user.company_id.document_ftp_passwd
